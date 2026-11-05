@@ -4,11 +4,24 @@
   "description": "",
   "main": "src/js/main.js",
   "scripts": {
+    "build": "webpack && sass src/scss",
+    "dev": "webpack --watch",
+    "start-build": "npm run build && npm run start",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
   "devDependencies": {
-    "electron": "^45.2.2"
+    "@babel/core": "^8.1.0",
+    "@babel/preset-react": "^8.0.1",
+    "babel-loader": "^10.1.1",
+    "electron": "^45.2.2",
+    "webpack": "^5.112.2",
+    "webpack-cli": "^7.3.1"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sass": "^1.107.1"
   }
 }

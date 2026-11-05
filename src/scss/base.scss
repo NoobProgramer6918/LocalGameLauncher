@@ -1,0 +1,19 @@
+@use 'theme';
+@use 'colors';
+
+body {
+  font-family: theme.$font;
+  @include theme.normal
+}
+
+button {
+  color: colors.$text;
+  background-color: colors.$accent;
+  border-radius: 15px;
+  border-color: #fff0;
+}
+
+button:active {
+  background-color: colors.$medium-accent;
+  scale: 0.9;
+}

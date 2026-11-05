@@ -1,0 +1,12 @@
+@use '../colors';
+@use '../theme';
+
+.LibrarySidebar {
+  background-color: colors.$lighter-background;
+  width: 200px;
+  position: fixed;
+  overflow: auto;
+
+  padding: 0.5em;
+  margin-left: 0.2em;
+}

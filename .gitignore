@@ -150,3 +150,10 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Webpack build artifacts
+src/dist/*
+
+# Scss build output
+src/scss/*.css
+src/scss/*.css.map

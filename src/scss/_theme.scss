@@ -1,0 +1,9 @@
+@use 'colors';
+
+$font: "Monaco", monospace;
+
+@mixin normal() {
+  background: colors.$background;
+  color: colors.$text;
+  border-color: colors.$accent;
+}
