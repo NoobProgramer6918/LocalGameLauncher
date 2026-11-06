@@ -4,8 +4,9 @@
   "description": "",
   "main": "src/js/main.js",
   "scripts": {
-    "build": "webpack && sass src/scss",
-    "dev": "webpack --watch",
+    "build-sass": "sass src/scss",
+    "build-webpack": "webpack",
+    "build": "npm run build-sass && npm run build-webpack",
     "start-build": "npm run build && npm run start",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"

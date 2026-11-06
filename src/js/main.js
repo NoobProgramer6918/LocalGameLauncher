@@ -1,5 +1,9 @@
+import InitApp from "./init_app";
+
 const { app, BrowserWindow } = require('electron')
-const path = require('path')
+const path = require('path');
+
+InitApp();
 
 const createWindow = () => {
   const win = new BrowserWindow({

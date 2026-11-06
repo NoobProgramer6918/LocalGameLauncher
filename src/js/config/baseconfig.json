@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "game_list_or_dir": "list",
+
+  "game_dir": "games",
+  "exclude": [],
+
+  "list": [
+
+  ]
+}

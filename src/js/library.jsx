@@ -1,12 +1,21 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import Navbar from "./elements/navbar";
+import '../scss/library/library.css'
+import '../scss/library/sidebar.css'
+import '../scss/library/playbutton.css'
+
+function LibraryGamePage({name}) {
+  return (
+      <div className={"LibraryGamePage"}>
+        <h2>{name}</h2>
+        <button className={"LibraryGameButton"}>Play</button>
+      </div>
+  );
+}
 
 function SidebarGame({name}) {
   return (
       <div className={"LibrarySidebarGame"}>
-        <p>{name}</p>
-        <button>View</button>
+        <button>{name}</button>
       </div>
   );
 }
@@ -14,7 +23,7 @@ function SidebarGame({name}) {
 function Sidebar() {
   return (
     <div className={"LibrarySidebar"}>
-
+      <SidebarGame name="Test"></SidebarGame>
       <SidebarGame name="Test"></SidebarGame>
     </div>
   );
@@ -22,10 +31,11 @@ function Sidebar() {
 
 function Library() {
   return (
-      <div>
+      <div className={"LibraryRoot"}>
         <br/>
         <br/>
         <Sidebar/>
+        <LibraryGamePage name={"Test game"}></LibraryGamePage>
       </div>
   );
 }

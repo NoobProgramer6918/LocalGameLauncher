@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import Navbar from './elements/navbar';
 import Home from './home';
 import Library from './library';
+import Settings from "./settings";
+import '../scss/base.css'
 
 function App() {
   const [page, setPage] = useState('home');
@@ -11,13 +13,15 @@ function App() {
     switch (page) {
       case 'home':    return <Home />;
       case 'library': return <Library />;
+      case 'settings': return <Settings />;
       default:        return <Home />;
     }
   };
 
   return (
       <div>
-        <Navbar navigate={setPage} />
+        <Navbar page={page} navigate={setPage} />
+        <hr></hr>
         {renderPage()}
       </div>
   );
