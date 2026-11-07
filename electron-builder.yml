@@ -1,0 +1,26 @@
+appId: com.noobprogramer6918.localgamelauncher
+productName: Local Game Launcher
+directories:
+  output: release
+# The renderer is bundled by webpack into src/dist, but the main process
+# (src/js/main.mjs) still loads src/js/*.mjs and src/html at runtime,
+# so those folders must stay in the package.
+# node_modules is not needed: react/react-dom are bundled into renderer.js
+# and the main process only imports node builtins + electron.
+files:
+  - src/js/**/*
+  - src/html/**/*
+  - src/dist/**/*
+win:
+  target:
+    - nsis
+    - portable
+linux:
+  target:
+    - appimage
+  maintainer: NoobProgramer6918
+  category: Game
+  syncDesktopName: true
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

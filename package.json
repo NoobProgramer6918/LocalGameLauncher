@@ -1,14 +1,17 @@
 {
   "name": "localgamelauncher",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desktop launcher for locally installed games, built with Electron",
   "license": "MIT",
+  "author": "NoobProgramer6918",
+  "desktopName": "localgamelauncher.desktop",
   "main": "src/js/main.mjs",
   "scripts": {
     "build-webpack": "webpack",
     "build": "npm run build-webpack",
     "start-build": "npm run build && npm run start",
     "start": "electron .",
+    "build-win": "npm run build && electron-builder --win",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
@@ -17,6 +20,7 @@
     "@babel/preset-react": "^8.0.1",
     "babel-loader": "^10.1.1",
     "electron": "^45.2.2",
+    "electron-builder": "^26.18.0",
     "sass": "^1.107.1",
     "sass-loader": "^17.1.0",
     "webpack": "^5.112.2",
