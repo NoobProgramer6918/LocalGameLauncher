@@ -2,6 +2,7 @@
   "name": "localgamelauncher",
   "version": "1.0.0",
   "description": "",
+  "license": "MIT",
   "main": "src/js/main.mjs",
   "scripts": {
     "build-webpack": "webpack",

@@ -160,3 +160,9 @@ src/scss/**/*.css.map
 
 # OpenCode
 opencode.jsonc
+
+# JetBrains IDE
+.idea/
+
+# Tooling/session files
+.awb/
