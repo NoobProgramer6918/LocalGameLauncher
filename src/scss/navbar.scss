@@ -1,6 +1,6 @@
 @use 'theme';
 @use 'colors';
-@use 'util';
+@use 'mixins';
 
 nav {
   background-color: colors.$background;
@@ -9,11 +9,11 @@ nav {
 
 nav button {
   padding: 0.22em;
-  font-size: 3.5rem;
+  font-size: 3rem;
   display: inline-block;
-  @include util.margin-side(1rem);
+  @include mixins.margin-side(1rem);
 
-  font-weight: bold;
+  @include mixins.semibold;
 
   border: none;
   background: none;
@@ -22,7 +22,7 @@ nav button {
 }
 
 nav button:hover {
-  scale: 1.2;
+  @include mixins.cool-scale(1.2);
 }
 
 nav button:active,

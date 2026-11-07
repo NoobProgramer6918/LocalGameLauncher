@@ -1,7 +1,5 @@
 import React from 'react';
-import '../../scss/navbar.css'
-import Home from '../home.jsx';
-import Library from "../library.jsx";
+import '../../../scss/navbar.scss'
 
 const Navbar = ({page, navigate}) => {
   return (

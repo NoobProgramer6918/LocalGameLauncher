@@ -154,6 +154,9 @@ vite.config.ts.timestamp-*
 # Webpack build artifacts
 src/dist/*
 
-# Scss build output
-src/scss/*.css
-src/scss/*.css.map
+# Scss build output (webpack/sass-loader output goes to src/dist)
+src/scss/**/*.css
+src/scss/**/*.css.map
+
+# OpenCode
+opencode.jsonc

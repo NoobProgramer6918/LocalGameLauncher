@@ -1,0 +1,13 @@
+@mixin margin-side($margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin semibold() {
+  font-weight: 600;
+}
+
+@mixin cool-scale($scale) {
+  transition-duration: 0.1s;
+  transform: scale($scale);
+}

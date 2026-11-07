@@ -1,16 +1,17 @@
 @use '../colors';
 @use '../theme';
-@use '../util';
+@use '../mixins';
+@use '../corners';
 
 .LibrarySidebar {
   background-color: colors.$lighter-background;
-  width: 12rem;
+  width: 8rem;
   position: fixed;
   overflow: auto;
 
   font-size: 2rem;
 
-  border-radius: 10px;
+  border-radius: corners.$squircle;
 
   display: list-item;
 
@@ -22,7 +23,7 @@
   text-align: center;
   width: stretch;
   margin: 0.2em;
-  @include util.margin-side(0.25em);
+  @include mixins.margin-side(0.25em);
 
   height: 2em;
   background-color: colors.$background;

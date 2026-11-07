@@ -4,7 +4,7 @@ import Navbar from './elements/navbar';
 import Home from './home';
 import Library from './library';
 import Settings from "./settings";
-import '../scss/base.css'
+import '../../scss/base.scss'
 
 function App() {
   const [page, setPage] = useState('home');
@@ -13,7 +13,8 @@ function App() {
     switch (page) {
       case 'home':    return <Home />;
       case 'library': return <Library />;
-      case 'settings': return <Settings />;
+      case 'settings': return <Settings navigate={setPage}/>;
+      case 'test': return <Home/>;
       default:        return <Home />;
     }
   };

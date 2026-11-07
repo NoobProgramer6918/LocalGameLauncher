@@ -1,12 +1,20 @@
 @use '../colors';
 @use '../theme';
+@use '../corners';
 
 .LibraryGamePage {
-  margin-left: 16rem;
+  margin-left: 12rem;
   height: stretch;
   width: stretch;
+
+  border-radius: corners.$squircle;
+
+  padding: 0.5em;
+  padding-left: 1em;
+  margin-right: 2rem;
+  background-color: colors.$lighter-background;
 }
 
 .LibraryGamePage h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }

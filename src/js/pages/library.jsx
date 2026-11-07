@@ -1,7 +1,7 @@
 import React from 'react';
-import '../scss/library/library.css'
-import '../scss/library/sidebar.css'
-import '../scss/library/playbutton.css'
+import '../../scss/library/library.scss'
+import '../../scss/library/sidebar.scss'
+import '../../scss/library/playbutton.scss'
 
 function LibraryGamePage({name}) {
   return (

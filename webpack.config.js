@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
-  entry: './src/js/index.jsx',
+  entry: './src/js/pages/index.jsx',
   output: {
     path: path.resolve(__dirname, 'src/dist'),
     filename: 'renderer.js',
@@ -19,6 +19,11 @@ module.exports = {
             presets: ['@babel/preset-react'],
           },
         },
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        type: 'css',
+        use: ['sass-loader'],
       },
     ],
   },

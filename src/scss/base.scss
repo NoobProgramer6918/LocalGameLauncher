@@ -1,5 +1,7 @@
 @use 'theme';
 @use 'colors';
+@use 'mixins';
+@use 'corners';
 
 body {
   font-family: theme.$font;
@@ -16,18 +18,18 @@ hr {
 button {
   color: colors.$text;
   background-color: colors.$accent;
-  border-radius: 15px;
+  border-radius: corners.$small_squircle;
   border-color: #fff0;
 }
 
 button:active {
   background-color: colors.$medium-accent;
-  scale: 0.9;
+  @include mixins.cool-scale(0.9);
 }
 
 input {
   background-color: colors.$lighter-background;
   color: colors.$text;
   border: 2px solid colors.$accent;
-  border-radius: 5px;
+  border-radius: corners.$small;
 }
