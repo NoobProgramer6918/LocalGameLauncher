@@ -1,6 +1,6 @@
 {
   "name": "localgamelauncher",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Desktop launcher for locally installed games, built with Electron",
   "license": "MIT",
   "author": "NoobProgramer6918",
