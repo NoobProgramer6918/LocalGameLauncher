@@ -47,6 +47,7 @@ npm run start         # launch the Electron app
 | `npm run start-build` | Builds first, then launches the app.               |
 | `npm run build`       | Builds the React bundle and SCSS into `src/dist/`. |
 | `npm run start`       | Launches the Electron app.                         |
+| `npm run build-win`   | Builds, then packages the app for Windows.         |
 
 ## Contributing
 

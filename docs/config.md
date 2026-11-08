@@ -1,6 +1,6 @@
 # Configuration Format
 
-The launcher reads a JSON config file (`config.json` in the app's data directory). A default config is created automatically if none exists — see `src/js/config/example.json` for a filled-in example.
+The launcher reads a JSON config file (`config.json` in the app's data directory). A default config is created automatically if none exists — see [Example](#example) below for a filled-in example.
 
 ## Example
 

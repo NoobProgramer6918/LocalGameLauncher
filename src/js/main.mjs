@@ -11,7 +11,10 @@ const createWindow = () => {
   win.loadFile(path.join(import.meta.dirname, "../html/index.html"));
 }
 
-electron.app.whenReady().then(() => {
-  createWindow();
-  InitApp();
-})
+async function Init() {
+  await InitApp();
+  electron.app.whenReady().then(() => {
+    createWindow();
+  })
+}
+Init();

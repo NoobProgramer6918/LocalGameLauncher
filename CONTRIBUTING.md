@@ -69,7 +69,7 @@ There is no watch/dev script yet — rebuild and relaunch after changes. `npm te
 
 ## Documentation
 
-- [`docs/`](docs/) contains project documentation for contributors, e.g. [`docs/config.md`](docs/config.md) explaining the app's JSON configuration format and its relative path resolution. If you add or change a feature, update `docs/` alongside the code where appropriate.
+- [`docs/`](docs/) contains project documentation for contributors, e.g. [`docs/config.md`](docs/config.md) explaining the app's JSON configuration format and its relative path resolution, and [`docs/packaging.md`](docs/packaging.md) on building distribution packages. If you add or change a feature, update `docs/` alongside the code where appropriate.
 
 ## Submitting changes
 

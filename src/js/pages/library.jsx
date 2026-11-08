@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import * as get_config from "../config/get.mjs";
 import '../../scss/library/library.scss'
 import '../../scss/library/sidebar.scss'
 import '../../scss/library/playbutton.scss'
@@ -20,22 +21,46 @@ function SidebarGame({name}) {
   );
 }
 
-function Sidebar() {
+function GetGames({games}) {
+
+  let games_list = [];
+  for (let i = 0; i < games.length; i++) {
+    games_list.push(React.createElement(SidebarGame, {name: games.at(i)["name"]}));
+  }
+  return games_list;
+
+}
+
+function Sidebar({games}) {
   return (
-    <div className={"LibrarySidebar"}>
-      <SidebarGame name="Test"></SidebarGame>
-      <SidebarGame name="Test"></SidebarGame>
-      // TODO: Make this show actual games.
-    </div>
+      <div className={"LibrarySidebar"}>
+        <GetGames games={games}/>
+      </div>
   );
 }
 
 function Library() {
+  const [games, setGames] = useState(null);
+
+  useEffect(() => {
+    get_config.GetConfig().then(config => {
+      setGames(config?.list ?? []);
+    });
+  }, []);
+
+  if (games === null) {
+    return (
+        <div className={"LibraryRoot"}>
+          <p>Loading&hellip;</p>
+        </div>
+    );
+  }
+
   return (
       <div className={"LibraryRoot"}>
         <br/>
         <br/>
-        <Sidebar/>
+        <Sidebar games={games}/>
         <LibraryGamePage name={"Test game"}></LibraryGamePage>
       </div>
   );
