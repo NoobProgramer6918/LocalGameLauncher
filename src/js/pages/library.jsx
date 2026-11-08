@@ -25,6 +25,7 @@ function Sidebar() {
     <div className={"LibrarySidebar"}>
       <SidebarGame name="Test"></SidebarGame>
       <SidebarGame name="Test"></SidebarGame>
+      // TODO: Make this show actual games.
     </div>
   );
 }
