@@ -67,6 +67,10 @@ There is no watch/dev script yet — rebuild and relaunch after changes. `npm te
 - Prefer small components and the existing minimal patterns over introducing new frameworks, state managers, or heavier tooling. Propose a dependency bump or new tooling via an issue first.
 - Keep changes small and focused; one feature or fix per PR.
 
+## Documentation
+
+- [`docs/`](docs/) contains project documentation for contributors, e.g. [`docs/config.md`](docs/config.md) explaining the app's JSON configuration format and its relative path resolution. If you add or change a feature, update `docs/` alongside the code where appropriate.
+
 ## Submitting changes
 
 1. Validate with the smallest relevant command — usually `npm run build` (and a quick `npm run start` smoke test) for UI or build-related changes.
@@ -75,4 +79,4 @@ There is no watch/dev script yet — rebuild and relaunch after changes. `npm te
 
 ## Code of conduct
 
-Be civil. Reviews judge the code, not the author — same rule applies to AI-generated patches.
+See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). In short: be civil — reviews judge the code, not the author.
