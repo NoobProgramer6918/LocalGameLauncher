@@ -8,7 +8,7 @@ Which includes:
  */
 import * as get_config from "./get.mjs";
 
-export default function InitConfig() {
+export default async function InitConfig() {
   console.log("Initializing config...");
-  get_config.GetConfig();
+  await get_config.GetConfig();
 }
