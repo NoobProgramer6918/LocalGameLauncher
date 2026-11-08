@@ -6,7 +6,7 @@ The project is a small desktop app without release channels — security fixes l
 
 | Version                | Supported |
 | ---------------------- | --------- |
-| latest `main`, and `v1` config format | ✅ |
+| latest version/main - `v.0.1.0`, and `v1` config format | ✅ |
 | older revisions        | ❌        |
 
 ## Reporting a vulnerability
