@@ -25,7 +25,7 @@ function GetGames({games}) {
 
   let games_list = [];
   for (let i = 0; i < games.length; i++) {
-    games_list.push(React.createElement(SidebarGame, {name: games.at(i)["name"]}));
+    games_list.push(React.createElement(SidebarGame, {name: games.at(i)["name"], key: i}));
   }
   return games_list;
 
