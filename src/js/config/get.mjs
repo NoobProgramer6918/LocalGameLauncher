@@ -24,7 +24,7 @@ export async function GetConfig() {
       configuration = JSON.parse(fs.readFileSync(setup_config.config_path).toString());
       console.log("\nPrinting config.");
       console.log(JSON.stringify(configuration, null, 2));
-
+      got_config = true;
     }
   }
   return configuration;
