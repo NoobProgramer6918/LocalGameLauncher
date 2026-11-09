@@ -51,7 +51,7 @@ npm run start         # launch the Electron app
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines and technical details. AI/LLM-assisted contributions are welcome, provided the code quality meets the same standard as any other contribution.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines and technical details. AI/LLM-assisted contributions are welcome as long as they meet the LLM usage guidelines provided in CONTRIBUTING.md
 
 ## License
 
