@@ -1,19 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import * as get_config from "../config/get.mjs";
+import * as run_game from "../rungame.mjs";
 import '../../scss/library/library.scss'
 import '../../scss/library/sidebar.scss'
 import '../../scss/library/playbutton.scss'
 
-function LibraryGamePage({name}) {
+let current_library_game = {};
+
+function LibraryGamePage({name, exec_path}) {
   return (
       <div className={"LibraryGamePage"}>
         <h2>{name}</h2>
-        <button className={"LibraryGameButton"}>Play</button>
+
+        <button onClick={() => {
+          run_game.RunGame(exec_path)
+        }} className={"LibraryGameButton"}>Play
+        </button>
       </div>
   );
 }
 
-function SidebarGame({name}) {
+function SidebarGame({name, executable}) {
   return (
       <div className={"LibrarySidebarGame"}>
         <button>{name}</button>
@@ -25,7 +32,11 @@ function GetGames({games}) {
 
   let games_list = [];
   for (let i = 0; i < games.length; i++) {
-    games_list.push(React.createElement(SidebarGame, {name: games.at(i)["name"], key: i}));
+    games_list.push(React.createElement(SidebarGame, {
+      name: games.at(i)["name"],
+      executable: games.at(i)["executable"],
+      key: i
+    }));
   }
   return games_list;
 
