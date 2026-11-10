@@ -2,7 +2,12 @@
 
 Thanks for considering a contribution! This document covers the technical details you need to work on the project.
 
-> LLM/AI-assisted contributions are welcome. AI-authored code is subject to the same review standard as human-authored code: if the quality is sufficient — correct, idiomatic for this codebase, and consistent with the conventions below — it will be accepted, regardless of whether a human or a model wrote it. (Yes, that includes small models. Just make sure the code actually works.)
+## LLM Usage
+
+**Using an LLM to assist you writing code is permitted**. AI-authored code is subject to the same review standard as human-authored code: if the quality is sufficient — correct, idiomatic for this codebase, and consistent with the conventions below — it will be accepted, regardless of whether a human or a model wrote it. (Yes, that includes small models. Just make sure the code actually works.) **It's also required that you know what the code does**, **purely vibe-coded changes are very much not recommended.**
+**Using AI to write documentation is allowed as long as it provides true information and the code snippets if present aren't misleading or not working**
+
+Also make sure to **check the models output**.
 
 ## Setup
 
