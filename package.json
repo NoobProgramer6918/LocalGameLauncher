@@ -19,7 +19,7 @@
     "@babel/core": "^8.1.0",
     "@babel/preset-react": "^8.0.1",
     "babel-loader": "^10.1.1",
-    "electron": "^45.2.2",
+    "electron": "^45.3.0",
     "electron-builder": "^26.18.0",
     "sass": "^1.107.1",
     "sass-loader": "^17.1.0",
