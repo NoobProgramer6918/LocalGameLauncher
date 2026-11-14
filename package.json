@@ -21,7 +21,7 @@
     "babel-loader": "^10.1.1",
     "electron": "^45.2.2",
     "electron-builder": "^26.18.0",
-    "sass": "^1.107.1",
+    "sass": "^1.108.2",
     "sass-loader": "^17.1.0",
     "webpack": "^5.112.2",
     "webpack-cli": "^7.3.1"
